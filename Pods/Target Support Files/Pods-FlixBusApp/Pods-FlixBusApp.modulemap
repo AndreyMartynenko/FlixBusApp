@@ -1,0 +1,6 @@
+framework module Pods_FlixBusApp {
+  umbrella header "Pods-FlixBusApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

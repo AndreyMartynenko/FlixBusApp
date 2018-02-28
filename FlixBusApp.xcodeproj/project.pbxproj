@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55029417203A4E3300CBEBD5 /* JSONTimetableService.m in Sources */ = {isa = PBXBuildFile; fileRef = 55029416203A4E3300CBEBD5 /* JSONTimetableService.m */; };
+		55403640203AECE5007221F8 /* TripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540363F203AECE5007221F8 /* TripCell.m */; };
+		55403643203AF24E007221F8 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 55403642203AF24E007221F8 /* Trip.m */; };
+		55403646203AF3BF007221F8 /* TripTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55403645203AF3BF007221F8 /* TripTableViewController.m */; };
+		55613BAE203C3B60004FA55D /* TripVm.m in Sources */ = {isa = PBXBuildFile; fileRef = 55613BAD203C3B60004FA55D /* TripVm.m */; };
+		55613BB1203C750E004FA55D /* TripVmSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55613BB0203C750E004FA55D /* TripVmSpec.m */; };
+		55613BB8203C7BAB004FA55D /* TripVmSpecHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 55613BB7203C7BAB004FA55D /* TripVmSpecHelper.m */; };
+		55613BBB203C810C004FA55D /* validTimetableResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 55613BBA203C810C004FA55D /* validTimetableResponse.json */; };
+		5566F0B02039D3510048DF65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F0AF2039D3510048DF65 /* AppDelegate.m */; };
+		5566F0B62039D3510048DF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5566F0B42039D3510048DF65 /* Main.storyboard */; };
+		5566F0B82039D3510048DF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5566F0B72039D3510048DF65 /* Assets.xcassets */; };
+		5566F0BB2039D3510048DF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5566F0B92039D3510048DF65 /* LaunchScreen.storyboard */; };
+		5566F0BE2039D3510048DF65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F0BD2039D3510048DF65 /* main.m */; };
+		5566F1422039E2820048DF65 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F11B2039E2820048DF65 /* BaseObject.m */; };
+		5566F14B2039E2820048DF65 /* JSONService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F1312039E2820048DF65 /* JSONService.m */; };
+		5566F14C2039E2820048DF65 /* ServicesHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F1342039E2820048DF65 /* ServicesHub.m */; };
+		5566F1522039E3DE0048DF65 /* Timetable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F1512039E3DE0048DF65 /* Timetable.m */; };
+		5566F15B2039E5BB0048DF65 /* Arrival.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F15A2039E5BB0048DF65 /* Arrival.m */; };
+		5566F15E2039E5CA0048DF65 /* Departure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F15D2039E5CA0048DF65 /* Departure.m */; };
+		5566F1612039E67C0048DF65 /* Datetime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F1602039E67C0048DF65 /* Datetime.m */; };
+		5566F1642039E8FB0048DF65 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F1632039E8FB0048DF65 /* Route.m */; };
+		5566F1672039E9880048DF65 /* Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566F1662039E9880048DF65 /* Coordinates.m */; };
+		5E6B55FB05038BD3386C86A4 /* Pods_FlixBusAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6ABD4C65E644A1D296B61BA /* Pods_FlixBusAppTests.framework */; };
+		D061FF2C576532E9BC887C96 /* Pods_FlixBusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6528831F06952D0389D68E5 /* Pods_FlixBusApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5566F0C42039D3510048DF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5566F0A32039D3510048DF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5566F0AA2039D3510048DF65;
+			remoteInfo = FlixBusApp;
+		};
+		5566F0CF2039D3510048DF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5566F0A32039D3510048DF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5566F0AA2039D3510048DF65;
+			remoteInfo = FlixBusApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12A1CF42F3EC17DCEB242B37 /* Pods-FlixBusAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixBusAppTests/Pods-FlixBusAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55029414203A4D9A00CBEBD5 /* TimetableService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimetableService.h; sourceTree = "<group>"; };
+		55029415203A4E3300CBEBD5 /* JSONTimetableService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONTimetableService.h; sourceTree = "<group>"; };
+		55029416203A4E3300CBEBD5 /* JSONTimetableService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONTimetableService.m; sourceTree = "<group>"; };
+		5540363E203AECE5007221F8 /* TripCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripCell.h; sourceTree = "<group>"; };
+		5540363F203AECE5007221F8 /* TripCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripCell.m; sourceTree = "<group>"; };
+		55403641203AF24E007221F8 /* Trip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		55403642203AF24E007221F8 /* Trip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		55403644203AF3BF007221F8 /* TripTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripTableViewController.h; sourceTree = "<group>"; };
+		55403645203AF3BF007221F8 /* TripTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripTableViewController.m; sourceTree = "<group>"; };
+		55613BAC203C3B60004FA55D /* TripVm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripVm.h; sourceTree = "<group>"; };
+		55613BAD203C3B60004FA55D /* TripVm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripVm.m; sourceTree = "<group>"; };
+		55613BAF203C42AF004FA55D /* TripVmDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripVmDelegate.h; sourceTree = "<group>"; };
+		55613BB0203C750E004FA55D /* TripVmSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripVmSpec.m; sourceTree = "<group>"; };
+		55613BB6203C7BAB004FA55D /* TripVmSpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripVmSpecHelper.h; sourceTree = "<group>"; };
+		55613BB7203C7BAB004FA55D /* TripVmSpecHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripVmSpecHelper.m; sourceTree = "<group>"; };
+		55613BBA203C810C004FA55D /* validTimetableResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = validTimetableResponse.json; sourceTree = "<group>"; };
+		5566F0AB2039D3510048DF65 /* FlixBusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixBusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5566F0AE2039D3510048DF65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5566F0AF2039D3510048DF65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5566F0B52039D3510048DF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5566F0B72039D3510048DF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5566F0BA2039D3510048DF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5566F0BC2039D3510048DF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5566F0BD2039D3510048DF65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5566F0C32039D3510048DF65 /* FlixBusAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5566F0C92039D3510048DF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5566F0CE2039D3510048DF65 /* FlixBusAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5566F11A2039E2820048DF65 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		5566F11B2039E2820048DF65 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		5566F1302039E2820048DF65 /* JSONService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONService.h; sourceTree = "<group>"; };
+		5566F1312039E2820048DF65 /* JSONService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONService.m; sourceTree = "<group>"; };
+		5566F1322039E2820048DF65 /* ServicesBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesBlocks.h; sourceTree = "<group>"; };
+		5566F1332039E2820048DF65 /* ServicesHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesHub.h; sourceTree = "<group>"; };
+		5566F1342039E2820048DF65 /* ServicesHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesHub.m; sourceTree = "<group>"; };
+		5566F1502039E3DE0048DF65 /* Timetable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timetable.h; sourceTree = "<group>"; };
+		5566F1512039E3DE0048DF65 /* Timetable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Timetable.m; sourceTree = "<group>"; };
+		5566F1592039E5BB0048DF65 /* Arrival.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arrival.h; sourceTree = "<group>"; };
+		5566F15A2039E5BB0048DF65 /* Arrival.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arrival.m; sourceTree = "<group>"; };
+		5566F15C2039E5CA0048DF65 /* Departure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Departure.h; sourceTree = "<group>"; };
+		5566F15D2039E5CA0048DF65 /* Departure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Departure.m; sourceTree = "<group>"; };
+		5566F15F2039E67C0048DF65 /* Datetime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Datetime.h; sourceTree = "<group>"; };
+		5566F1602039E67C0048DF65 /* Datetime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Datetime.m; sourceTree = "<group>"; };
+		5566F1622039E8FB0048DF65 /* Route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		5566F1632039E8FB0048DF65 /* Route.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		5566F1652039E9880048DF65 /* Coordinates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinates.h; sourceTree = "<group>"; };
+		5566F1662039E9880048DF65 /* Coordinates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coordinates.m; sourceTree = "<group>"; };
+		64AB81426238D1643978CA99 /* Pods-FlixBusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlixBusApp/Pods-FlixBusApp.release.xcconfig"; sourceTree = "<group>"; };
+		86B1B38DA3B557C633C92DCA /* Pods-FlixBusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixBusApp/Pods-FlixBusApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD8EF5BA84E00AAB3503E321 /* Pods-FlixBusAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlixBusAppTests/Pods-FlixBusAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6ABD4C65E644A1D296B61BA /* Pods_FlixBusAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBusAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6528831F06952D0389D68E5 /* Pods_FlixBusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5566F0A82039D3510048DF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D061FF2C576532E9BC887C96 /* Pods_FlixBusApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5566F0C02039D3510048DF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6B55FB05038BD3386C86A4 /* Pods_FlixBusAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5566F0CB2039D3510048DF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55613BAB203C3B28004FA55D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				55613BAC203C3B60004FA55D /* TripVm.h */,
+				55613BAD203C3B60004FA55D /* TripVm.m */,
+				55613BAF203C42AF004FA55D /* TripVmDelegate.h */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55613BB4203C7B8F004FA55D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55613BB6203C7BAB004FA55D /* TripVmSpecHelper.h */,
+				55613BB7203C7BAB004FA55D /* TripVmSpecHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		55613BB5203C7B99004FA55D /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				55613BB0203C750E004FA55D /* TripVmSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		55613BB9203C7DEA004FA55D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				55613BBA203C810C004FA55D /* validTimetableResponse.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		5566F0A22039D3510048DF65 = {
+			isa = PBXGroup;
+			children = (
+				5566F0AD2039D3510048DF65 /* FlixBusApp */,
+				5566F0C62039D3510048DF65 /* FlixBusAppTests */,
+				5566F0AC2039D3510048DF65 /* Products */,
+				F828E171A217AFCDC1A667AF /* Pods */,
+				56E2DAFB6AA601C2CB61C2EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5566F0AC2039D3510048DF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5566F0AB2039D3510048DF65 /* FlixBusApp.app */,
+				5566F0C32039D3510048DF65 /* FlixBusAppTests.xctest */,
+				5566F0CE2039D3510048DF65 /* FlixBusAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5566F0AD2039D3510048DF65 /* FlixBusApp */ = {
+			isa = PBXGroup;
+			children = (
+				5566F1152039E2820048DF65 /* Classes */,
+				5566F0AE2039D3510048DF65 /* AppDelegate.h */,
+				5566F0AF2039D3510048DF65 /* AppDelegate.m */,
+				5566F0B42039D3510048DF65 /* Main.storyboard */,
+				5566F0B72039D3510048DF65 /* Assets.xcassets */,
+				5566F0B92039D3510048DF65 /* LaunchScreen.storyboard */,
+				5566F0BC2039D3510048DF65 /* Info.plist */,
+				5566F0BD2039D3510048DF65 /* main.m */,
+			);
+			path = FlixBusApp;
+			sourceTree = "<group>";
+		};
+		5566F0C62039D3510048DF65 /* FlixBusAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				55613BB5203C7B99004FA55D /* Specs */,
+				55613BB4203C7B8F004FA55D /* Helpers */,
+				55613BB9203C7DEA004FA55D /* Stubs */,
+				5566F0C92039D3510048DF65 /* Info.plist */,
+			);
+			path = FlixBusAppTests;
+			sourceTree = "<group>";
+		};
+		5566F1152039E2820048DF65 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5566F1192039E2820048DF65 /* Model */,
+				5566F1282039E2820048DF65 /* Services */,
+				55613BAB203C3B28004FA55D /* ViewModels */,
+				5566F13B2039E2820048DF65 /* View */,
+				5566F13E2039E2820048DF65 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5566F1192039E2820048DF65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5566F11A2039E2820048DF65 /* BaseObject.h */,
+				5566F11B2039E2820048DF65 /* BaseObject.m */,
+				5566F1502039E3DE0048DF65 /* Timetable.h */,
+				5566F1512039E3DE0048DF65 /* Timetable.m */,
+				55403641203AF24E007221F8 /* Trip.h */,
+				55403642203AF24E007221F8 /* Trip.m */,
+				5566F1592039E5BB0048DF65 /* Arrival.h */,
+				5566F15A2039E5BB0048DF65 /* Arrival.m */,
+				5566F15C2039E5CA0048DF65 /* Departure.h */,
+				5566F15D2039E5CA0048DF65 /* Departure.m */,
+				5566F15F2039E67C0048DF65 /* Datetime.h */,
+				5566F1602039E67C0048DF65 /* Datetime.m */,
+				5566F1622039E8FB0048DF65 /* Route.h */,
+				5566F1632039E8FB0048DF65 /* Route.m */,
+				5566F1652039E9880048DF65 /* Coordinates.h */,
+				5566F1662039E9880048DF65 /* Coordinates.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5566F1282039E2820048DF65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5566F12B2039E2820048DF65 /* JSONImplementation */,
+				5566F1322039E2820048DF65 /* ServicesBlocks.h */,
+				5566F1332039E2820048DF65 /* ServicesHub.h */,
+				5566F1342039E2820048DF65 /* ServicesHub.m */,
+				55029414203A4D9A00CBEBD5 /* TimetableService.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5566F12B2039E2820048DF65 /* JSONImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				5566F1302039E2820048DF65 /* JSONService.h */,
+				5566F1312039E2820048DF65 /* JSONService.m */,
+				55029415203A4E3300CBEBD5 /* JSONTimetableService.h */,
+				55029416203A4E3300CBEBD5 /* JSONTimetableService.m */,
+			);
+			path = JSONImplementation;
+			sourceTree = "<group>";
+		};
+		5566F13B2039E2820048DF65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5540363E203AECE5007221F8 /* TripCell.h */,
+				5540363F203AECE5007221F8 /* TripCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5566F13E2039E2820048DF65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55403644203AF3BF007221F8 /* TripTableViewController.h */,
+				55403645203AF3BF007221F8 /* TripTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		56E2DAFB6AA601C2CB61C2EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6528831F06952D0389D68E5 /* Pods_FlixBusApp.framework */,
+				D6ABD4C65E644A1D296B61BA /* Pods_FlixBusAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F828E171A217AFCDC1A667AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86B1B38DA3B557C633C92DCA /* Pods-FlixBusApp.debug.xcconfig */,
+				64AB81426238D1643978CA99 /* Pods-FlixBusApp.release.xcconfig */,
+				12A1CF42F3EC17DCEB242B37 /* Pods-FlixBusAppTests.debug.xcconfig */,
+				CD8EF5BA84E00AAB3503E321 /* Pods-FlixBusAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5566F0AA2039D3510048DF65 /* FlixBusApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5566F0D72039D3510048DF65 /* Build configuration list for PBXNativeTarget "FlixBusApp" */;
+			buildPhases = (
+				76827BAE549B52E9D444F449 /* [CP] Check Pods Manifest.lock */,
+				5566F0A72039D3510048DF65 /* Sources */,
+				5566F0A82039D3510048DF65 /* Frameworks */,
+				5566F0A92039D3510048DF65 /* Resources */,
+				DBEABF736D427439376D2996 /* [CP] Embed Pods Frameworks */,
+				ABF2D2A2F2B33630098B26C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlixBusApp;
+			productName = FlixBusApp;
+			productReference = 5566F0AB2039D3510048DF65 /* FlixBusApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5566F0C22039D3510048DF65 /* FlixBusAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5566F0DA2039D3510048DF65 /* Build configuration list for PBXNativeTarget "FlixBusAppTests" */;
+			buildPhases = (
+				B7752E2852446082AFBF706A /* [CP] Check Pods Manifest.lock */,
+				5566F0BF2039D3510048DF65 /* Sources */,
+				5566F0C02039D3510048DF65 /* Frameworks */,
+				5566F0C12039D3510048DF65 /* Resources */,
+				79345DD0326554F81A0304ED /* [CP] Embed Pods Frameworks */,
+				9DDB2E130EC2BABD82295A04 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5566F0C52039D3510048DF65 /* PBXTargetDependency */,
+			);
+			name = FlixBusAppTests;
+			productName = FlixBusAppTests;
+			productReference = 5566F0C32039D3510048DF65 /* FlixBusAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5566F0CD2039D3510048DF65 /* FlixBusAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5566F0DD2039D3510048DF65 /* Build configuration list for PBXNativeTarget "FlixBusAppUITests" */;
+			buildPhases = (
+				5566F0CA2039D3510048DF65 /* Sources */,
+				5566F0CB2039D3510048DF65 /* Frameworks */,
+				5566F0CC2039D3510048DF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5566F0D02039D3510048DF65 /* PBXTargetDependency */,
+			);
+			name = FlixBusAppUITests;
+			productName = FlixBusAppUITests;
+			productReference = 5566F0CE2039D3510048DF65 /* FlixBusAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5566F0A32039D3510048DF65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Andrey;
+				TargetAttributes = {
+					5566F0AA2039D3510048DF65 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5566F0C22039D3510048DF65 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5566F0AA2039D3510048DF65;
+					};
+					5566F0CD2039D3510048DF65 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5566F0AA2039D3510048DF65;
+					};
+				};
+			};
+			buildConfigurationList = 5566F0A62039D3510048DF65 /* Build configuration list for PBXProject "FlixBusApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5566F0A22039D3510048DF65;
+			productRefGroup = 5566F0AC2039D3510048DF65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5566F0AA2039D3510048DF65 /* FlixBusApp */,
+				5566F0C22039D3510048DF65 /* FlixBusAppTests */,
+				5566F0CD2039D3510048DF65 /* FlixBusAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5566F0A92039D3510048DF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5566F0BB2039D3510048DF65 /* LaunchScreen.storyboard in Resources */,
+				5566F0B82039D3510048DF65 /* Assets.xcassets in Resources */,
+				5566F0B62039D3510048DF65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5566F0C12039D3510048DF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55613BBB203C810C004FA55D /* validTimetableResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5566F0CC2039D3510048DF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76827BAE549B52E9D444F449 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixBusApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79345DD0326554F81A0304ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlixBusAppTests/Pods-FlixBusAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
+				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMock.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlixBusAppTests/Pods-FlixBusAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDB2E130EC2BABD82295A04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlixBusAppTests/Pods-FlixBusAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF2D2A2F2B33630098B26C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlixBusApp/Pods-FlixBusApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7752E2852446082AFBF706A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixBusAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBEABF736D427439376D2996 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlixBusApp/Pods-FlixBusApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlixBusApp/Pods-FlixBusApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5566F0A72039D3510048DF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5566F1612039E67C0048DF65 /* Datetime.m in Sources */,
+				5566F15E2039E5CA0048DF65 /* Departure.m in Sources */,
+				55613BAE203C3B60004FA55D /* TripVm.m in Sources */,
+				55029417203A4E3300CBEBD5 /* JSONTimetableService.m in Sources */,
+				5566F1672039E9880048DF65 /* Coordinates.m in Sources */,
+				5566F1422039E2820048DF65 /* BaseObject.m in Sources */,
+				5566F0BE2039D3510048DF65 /* main.m in Sources */,
+				5566F1522039E3DE0048DF65 /* Timetable.m in Sources */,
+				5566F15B2039E5BB0048DF65 /* Arrival.m in Sources */,
+				55403643203AF24E007221F8 /* Trip.m in Sources */,
+				5566F0B02039D3510048DF65 /* AppDelegate.m in Sources */,
+				55403646203AF3BF007221F8 /* TripTableViewController.m in Sources */,
+				55403640203AECE5007221F8 /* TripCell.m in Sources */,
+				5566F14B2039E2820048DF65 /* JSONService.m in Sources */,
+				5566F14C2039E2820048DF65 /* ServicesHub.m in Sources */,
+				5566F1642039E8FB0048DF65 /* Route.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5566F0BF2039D3510048DF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55613BB8203C7BAB004FA55D /* TripVmSpecHelper.m in Sources */,
+				55613BB1203C750E004FA55D /* TripVmSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5566F0CA2039D3510048DF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5566F0C52039D3510048DF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5566F0AA2039D3510048DF65 /* FlixBusApp */;
+			targetProxy = 5566F0C42039D3510048DF65 /* PBXContainerItemProxy */;
+		};
+		5566F0D02039D3510048DF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5566F0AA2039D3510048DF65 /* FlixBusApp */;
+			targetProxy = 5566F0CF2039D3510048DF65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5566F0B42039D3510048DF65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5566F0B52039D3510048DF65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5566F0B92039D3510048DF65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5566F0BA2039D3510048DF65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5566F0D52039D3510048DF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5566F0D62039D3510048DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5566F0D82039D3510048DF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B1B38DA3B557C633C92DCA /* Pods-FlixBusApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRG8KSNL6T;
+				INFOPLIST_FILE = FlixBusApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FlixBusApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5566F0D92039D3510048DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64AB81426238D1643978CA99 /* Pods-FlixBusApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRG8KSNL6T;
+				INFOPLIST_FILE = FlixBusApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FlixBusApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5566F0DB2039D3510048DF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A1CF42F3EC17DCEB242B37 /* Pods-FlixBusAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRG8KSNL6T;
+				INFOPLIST_FILE = FlixBusAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FlixBusAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixBusApp.app/FlixBusApp";
+			};
+			name = Debug;
+		};
+		5566F0DC2039D3510048DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8EF5BA84E00AAB3503E321 /* Pods-FlixBusAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRG8KSNL6T;
+				INFOPLIST_FILE = FlixBusAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FlixBusAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixBusApp.app/FlixBusApp";
+			};
+			name = Release;
+		};
+		5566F0DE2039D3510048DF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRG8KSNL6T;
+				INFOPLIST_FILE = FlixBusAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FlixBusAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlixBusApp;
+			};
+			name = Debug;
+		};
+		5566F0DF2039D3510048DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRG8KSNL6T;
+				INFOPLIST_FILE = FlixBusAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FlixBusAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlixBusApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5566F0A62039D3510048DF65 /* Build configuration list for PBXProject "FlixBusApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5566F0D52039D3510048DF65 /* Debug */,
+				5566F0D62039D3510048DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5566F0D72039D3510048DF65 /* Build configuration list for PBXNativeTarget "FlixBusApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5566F0D82039D3510048DF65 /* Debug */,
+				5566F0D92039D3510048DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5566F0DA2039D3510048DF65 /* Build configuration list for PBXNativeTarget "FlixBusAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5566F0DB2039D3510048DF65 /* Debug */,
+				5566F0DC2039D3510048DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5566F0DD2039D3510048DF65 /* Build configuration list for PBXNativeTarget "FlixBusAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5566F0DE2039D3510048DF65 /* Debug */,
+				5566F0DF2039D3510048DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5566F0A32039D3510048DF65 /* Project object */;
+}

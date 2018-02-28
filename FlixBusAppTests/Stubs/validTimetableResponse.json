@@ -1,0 +1,147 @@
+{  
+   "timetable":{  
+      "arrivals":[  
+         {  
+            "through_the_stations":"Hanover \u2192 Peine \u2192 Berlin central bus station",
+            "datetime":{  
+               "timestamp":1461056400,
+               "tz":"GMT+02:00"
+            },
+            "line_direction":"Bus route 131 direction Berlin central bus station",
+            "route":[  
+               {  
+                  "id":64,
+                  "name":"Hanover",
+                  "address":"Rundestra\u00dfe 12",
+                  "full_address":"Rundestra\u00dfe 12, 30161 Hannover, Germany",
+                  "coordinates":{  
+                     "latitude":52.378922,
+                     "longitude":9.740987
+                  }
+               },
+               {  
+                  "id":5958,
+                  "name":"Peine",
+                  "address":"Braunschweiger Stra\u00dfe",
+                  "full_address":"Braunschweiger Stra\u00dfe, 31224 Peine, Germany",
+                  "coordinates":{  
+                     "latitude":52.318714,
+                     "longitude":10.232146
+                  }
+               },
+               {  
+                  "id":1,
+                  "name":"Berlin central bus station",
+                  "address":"Masurenallee 4-6",
+                  "full_address":"Masurenallee 4-6, 14057 Berlin ZOB, Germany",
+                  "coordinates":{  
+                     "latitude":52.507171,
+                     "longitude":13.279399
+                  }
+               }
+            ],
+            "line_code":"L131",
+            "direction":"Berlin central bus station",
+            "delay_status":"on_time",
+            "delay":{  
+               "timestamp":1461056400,
+               "tz":"GMT+02:00"
+            },
+            "station_ride_message":"On time."
+         },
+         {  
+            "through_the_stations":"Hanover \u2192 Berlin central bus station",
+            "datetime":{  
+               "timestamp":1519005600,
+               "tz":"GMT+02:00"
+            },
+            "line_direction":"Bus route 131 direction Berlin central bus station",
+            "route":[  
+               {  
+                  "id":64,
+                  "name":"Hanover",
+                  "address":"Rundestra\u00dfe 12",
+                  "full_address":"Rundestra\u00dfe 12, 30161 Hannover, Germany",
+                  "coordinates":{  
+                     "latitude":52.378922,
+                     "longitude":9.740987
+                  }
+               },
+               {  
+                  "id":1,
+                  "name":"Berlin central bus station",
+                  "address":"Masurenallee 4-6",
+                  "full_address":"Masurenallee 4-6, 14057 Berlin ZOB, Germany",
+                  "coordinates":{  
+                     "latitude":52.507171,
+                     "longitude":13.279399
+                  }
+               }
+            ],
+            "line_code":"L131",
+            "direction":"Berlin central bus station",
+            "delay_status":"on_time",
+            "delay":{  
+               "timestamp":1461056400,
+               "tz":"GMT+02:00"
+            },
+            "station_ride_message":"On time."
+         }
+      ],
+      "departures":[  
+         {  
+            "through_the_stations":"Berlin central bus station \u2192 M\u00fcnchberg \u2192 Himmelkron \u2192 Munich central bus station",
+            "datetime":{  
+               "timestamp":1461056400,
+               "tz":"GMT+02:00"
+            },
+            "line_direction":"Bus route 006 direction Z\u00fcrich",
+            "route":[  
+               {  
+                  "id":1,
+                  "name":"Berlin central bus station",
+                  "address":"Masurenallee 4-6",
+                  "full_address":"Masurenallee 4-6, 14057 Berlin ZOB, Germany",
+                  "coordinates":{  
+                     "latitude":52.507171,
+                     "longitude":13.279399
+                  }
+               },
+               {  
+                  "id":43,
+                  "name":"M\u00fcnchberg",
+                  "address":"August-Horch-Stra\u00dfe 12",
+                  "full_address":"August-Horch-Stra\u00dfe 12, 95213 M\u00fcnchberg, Germany",
+                  "coordinates":{  
+                     "latitude":50.20334,
+                     "longitude":11.777464
+                  }
+               },
+               {  
+                  "id":1714,
+                  "name":"Himmelkron",
+                  "address":"Hofer Stra\u00dfe 2",
+                  "full_address":"Hofer Stra\u00dfe 2, 95502 Himmelkron, Germany",
+                  "coordinates":{  
+                     "latitude":50.05418,
+                     "longitude":11.62229
+                  }
+               },
+               {  
+                  "id":10,
+                  "name":"Munich central bus station",
+                  "address":"Arnulfstra\u00dfe 21",
+                  "full_address":"Arnulfstra\u00dfe 21, 80335 M\u00fcnchen, Germany",
+                  "coordinates":{  
+                     "latitude":48.14248,
+                     "longitude":11.55001
+                  }
+               }
+            ],
+            "line_code":"L006",
+            "direction":"Z\u00fcrich"
+         }
+      ],
+      "message":""
+   }
+}
